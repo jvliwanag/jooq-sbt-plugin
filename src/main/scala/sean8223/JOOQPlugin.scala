@@ -63,7 +63,7 @@ object JOOQPlugin extends Plugin {
 
     jooqLogLevel := "info",
 
-    jooqOutputDirectory <<= sourceManaged( _ / "java"),
+    jooqOutputDirectory <<= sourceManaged( _ / "main" / "jooq"),
     
     sourceGenerators in Compile <+= (streams, 
 				     baseDirectory, 
